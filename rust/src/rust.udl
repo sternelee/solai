@@ -1,0 +1,5 @@
+namespace rust {
+    void insert_to_frontmost_app(string content);
+    void paste_to_frontmost_app(string content);
+    sequence<u8> generate_qr_code(string data);
+};

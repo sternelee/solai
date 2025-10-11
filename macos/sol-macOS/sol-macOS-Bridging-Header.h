@@ -10,5 +10,6 @@
 #import <React/RCTRootView.h>
 #import <React/RCTUtils.h>
 #import <React/RCTViewManager.h>
+#import "rustFFI.h"
 
 AXError _AXUIElementGetWindow(AXUIElementRef element, uint32_t *identifier);

@@ -287,11 +287,11 @@ class SolNative: RCTEventEmitter {
   }
 
   @objc func pasteToFrontmostApp(_ content: String) {
-    ClipboardHelper.pasteToFrontmostApp(content)
+    rust.paste_to_frontmost_app(content: content)
   }
 
   @objc func insertToFrontmostApp(_ content: String) {
-    ClipboardHelper.insertToFrontmostApp(content)
+    rust.insert_to_frontmost_app(content: content)
   }
 
   @objc func turnOnHorizontalArrowsListeners() {
@@ -382,7 +382,10 @@ class SolNative: RCTEventEmitter {
   }
 
   @objc func showWifiQR(_ SSID: String, password: String) {
-    let image = WifiQR(name: SSID, password: password)
+    let wifiString = "WIFI:T:WPA;S:\(SSID);P:\(password);;"
+    let imageData = rust.generate_qr_code(data: wifiString)
+    let image = NSImage(data: Data(imageData))
+
     DispatchQueue.main.async {
       let wifiInfo = "SSID: \(SSID)\nPassword: \(password)"
       ToastManager.shared.showToast(

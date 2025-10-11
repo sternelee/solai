@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B59886C2-F5AE-4234-B8D4-CA78FBC6F46E /* librust.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC5B2EB-D9C3-4DFF-AE6F-63E0D6B10FF5 /* librust.a */; };
+		4B1BEF1D-4051-4B7C-918E-874B45CFFA78 /* rust.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E28EA2-60EF-41CF-B62D-2605C2DC34B9 /* rust.swift */; };
 		3919C725599C8DA45324A5C6 /* libPods-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1194CEEB2780EBB1CE91CBEB /* libPods-macOS.a */; };
 		514201522437B4B40078DB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514201512437B4B40078DB4F /* Assets.xcassets */; };
 		514201552437B4B40078DB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514201532437B4B40078DB4F /* Main.storyboard */; };
@@ -14,8 +16,6 @@
 		700A18D8279DBBE40096C830 /* ApplicationSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700A18D7279DBBE40096C830 /* ApplicationSearcher.swift */; };
 		700A18DA279DC17F0096C830 /* FileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700A18D9279DC17F0096C830 /* FileIcon.swift */; };
 		700A18DC279DC1F50096C830 /* FileIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 700A18DB279DC1F50096C830 /* FileIcon.m */; };
-		700A99F22C33D6E30049831F /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700A99F12C33D6E30049831F /* QRGenerator.swift */; };
-		700DF99A28266F0B00C5FD0B /* ClipboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DF99928266F0B00C5FD0B /* ClipboardHelper.swift */; };
 		700F266729F501C8002CA8F1 /* BlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 700F266629F501C8002CA8F1 /* BlurView.m */; };
 		700F266929F5026B002CA8F1 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700F266829F5026B002CA8F1 /* BlurView.swift */; };
 		700F266B29F50BF6002CA8F1 /* NSBezierPath.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700F266A29F50BF6002CA8F1 /* NSBezierPath.extension.swift */; };
@@ -82,8 +82,6 @@
 		700A18D7279DBBE40096C830 /* ApplicationSearcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSearcher.swift; sourceTree = "<group>"; };
 		700A18D9279DC17F0096C830 /* FileIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIcon.swift; sourceTree = "<group>"; };
 		700A18DB279DC1F50096C830 /* FileIcon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileIcon.m; sourceTree = "<group>"; };
-		700A99F12C33D6E30049831F /* QRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGenerator.swift; sourceTree = "<group>"; };
-		700DF99928266F0B00C5FD0B /* ClipboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardHelper.swift; sourceTree = "<group>"; };
 		700F266629F501C8002CA8F1 /* BlurView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlurView.m; sourceTree = "<group>"; };
 		700F266829F5026B002CA8F1 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		700F266A29F50BF6002CA8F1 /* NSBezierPath.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSBezierPath.extension.swift; sourceTree = "<group>"; };
@@ -148,6 +146,10 @@
 		70FEADF629E496D1008B5F36 /* processes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = processes.h; sourceTree = "<group>"; };
 		8893925B66AC7320A4EB378E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		95E8C102E7DEC7DFB286A43C /* Pods-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.release.xcconfig"; path = "Target Support Files/Pods-macOS/Pods-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		BFC5B2EB-D9C3-4DFF-AE6F-63E0D6B10FF5 /* librust.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librust.a; path = "sol-macOS/rust/librust.a"; sourceTree = "<group>"; };
+		A0E28EA2-60EF-41CF-B62D-2605C2DC34B9 /* rust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = rust.swift; path = "sol-macOS/rust/rust.swift"; sourceTree = "<group>"; };
+		15202E47-0D34-44F4-884D-AA4B6AAFB0C5 /* rustFFI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rustFFI.h; path = "sol-macOS/rust/rustFFI.h"; sourceTree = "<group>"; };
+		18A5C4E9-F198-4862-9BD2-EB4C457FDFA2 /* rustFFI.modulemap */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.module-map; name = rustFFI.modulemap; path = "sol-macOS/rust/rustFFI.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				706D6D572B3894E200941026 /* CoreLocation.framework in Frameworks */,
 				706D6D532B388C1700941026 /* CoreWLAN.framework in Frameworks */,
 				7065EBBF2CDB8C2B008C0A74 /* LaunchAtLogin in Frameworks */,
+				B59886C2-F5AE-4234-B8D4-CA78FBC6F46E /* librust.a in Frameworks */,
 				3919C725599C8DA45324A5C6 /* libPods-macOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +190,7 @@
 		5142014A2437B4B30078DB4F /* sol-macOS */ = {
 			isa = PBXGroup;
 			children = (
+				88D0DB4C-B2E4-4901-91F0-AB07FF2C80C0 /* rust */,
 				7034073F2DD7182B004D7D3D /* fonts */,
 				70A25D432D33AF3400165270 /* managers */,
 				70F7EBEA2795A4BD00CED17A /* lib */,
@@ -255,6 +259,17 @@
 			path = managers;
 			sourceTree = "<group>";
 		};
+		88D0DB4C-B2E4-4901-91F0-AB07FF2C80C0 /* rust */ = {
+			isa = PBXGroup;
+			children = (
+				BFC5B2EB-D9C3-4DFF-AE6F-63E0D6B10FF5 /* librust.a */,
+				A0E28EA2-60EF-41CF-B2D-2605C2DC34B9 /* rust.swift */,
+				15202E47-0D34-44F4-884D-AA4B6AAFB0C5 /* rustFFI.h */,
+				18A5C4E9-F198-4862-9BD2-EB4C457FDFA2 /* rustFFI.modulemap */,
+			);
+			path = rust;
+			sourceTree = "<group>";
+		};
 		70F7EBEA2795A4BD00CED17A /* lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,7 +292,6 @@
 				701EC4602822E33B00597D99 /* AccessibilityElement.swift */,
 				7034503F28238AAB00240BDD /* ScreenDetector.swift */,
 				70B2D58F2824254B0005D80A /* WindowManager.swift */,
-				700DF99928266F0B00C5FD0B /* ClipboardHelper.swift */,
 				70911D4C28BB22620005FD0E /* JSIBindings.mm */,
 				70911D4D28BB22620005FD0E /* JSIBindings.hpp */,
 				70911D4F28BB23AC0005FD0E /* SolMacros.h */,
@@ -296,7 +310,6 @@
 				70754B542BECF14200B77EF8 /* FileSearch.h */,
 				703EB24C2BED4E1E00F7B391 /* NSString+Score.m */,
 				703EB24E2BED4E3C00F7B391 /* NSString+Score.h */,
-				700A99F12C33D6E30049831F /* QRGenerator.swift */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -332,6 +345,7 @@
 			buildPhases = (
 				41F086C2CD5D35E46B64B9C8 /* [CP] Check Pods Manifest.lock */,
 				7052895C2D2724A500C2167C /* Run Script */,
+				901289A2-96FC-4065-94A9-75054B4E02EF /* Build Rust library */,
 				381D8A6F24576A6C00465D17 /* Start Packager */,
 				514201452437B4B30078DB4F /* Sources */,
 				514201462437B4B30078DB4F /* Frameworks */,
@@ -570,6 +584,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-macOS/Pods-macOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		901289A2-96FC-4065-94A9-75054B4E02EF /* Build Rust library */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust library";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../scripts/build-rust-for-macos.sh\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -577,6 +609,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1BEF1D-4051-4B7C-918E-874B45CFFA78 /* rust.swift in Sources */,
 				7047E80627D4D31400582E1B /* MediaHelper.swift in Sources */,
 				70EA99EA2794967E008E54FD /* AppDelegate.swift in Sources */,
 				70AAC12229F7AC17004AD3E7 /* GradientView.swift in Sources */,
@@ -621,13 +654,11 @@
 				70A25D492D33B9CF00165270 /* ToastManager.swift in Sources */,
 				703EB24D2BED4E1E00F7B391 /* NSString+Score.m in Sources */,
 				70E15D082931FC57007FFE5F /* FS.swift in Sources */,
-				700DF99A28266F0B00C5FD0B /* ClipboardHelper.swift in Sources */,
 				700A18DA279DC17F0096C830 /* FileIcon.swift in Sources */,
 				706ABFAE2E059FCF000C0F30 /* KeyboardShortcutRecorderView.swift in Sources */,
 				706ABFAF2E059FCF000C0F30 /* KeyboardShortcutRecorderView.m in Sources */,
 				70754B532BECECAB00B77EF8 /* FileSearch.mm in Sources */,
 				70BED7CB27F4C1A600906E41 /* FileConstants.swift in Sources */,
-				700A99F22C33D6E30049831F /* QRGenerator.swift in Sources */,
 				70E80B5F294C6EDE0094F1B5 /* MetadataExtractorError.swift in Sources */,
 				70B2D5902824254B0005D80A /* WindowManager.swift in Sources */,
 			);
@@ -668,6 +699,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/sol-macOS/rust",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.1.0;
 				OTHER_LDFLAGS = (
@@ -706,6 +741,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/sol-macOS/rust",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.1.0;
